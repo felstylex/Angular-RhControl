@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/rh-control",
+            "outputPath": "docs/rh-control",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
