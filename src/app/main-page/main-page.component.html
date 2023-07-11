@@ -1,0 +1,19 @@
+<div class="body">
+  <button (click)="openModal()">Novo</button>
+  <button (click)="logout()">Sair</button>
+  <div class="main-page">
+    <li>
+      <p>Nome</p>
+      <p>Cargo</p>
+      <p>Departamento</p>
+      <p>Status</p>
+    </li>
+    <li class="list" *ngFor="let e of employees">
+      <h2><a  routerLink="/employee/{{ e.id }}">{{ e.name }}</a></h2>
+      <p>{{e.office}}</p>
+      <p>{{e.department}}</p>
+      <p>{{e.status}}</p>
+    </li>
+  </div>
+</div>
+

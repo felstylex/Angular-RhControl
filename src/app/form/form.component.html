@@ -1,0 +1,48 @@
+<div class="form-overlay">
+  <div class="form-body">
+    <form class="input-container" #employeeForm="ngForm" (ngSubmit)="onSubmit(employeeForm)">
+      <h2>Cadastre um novo funcionário</h2>
+
+      <label>Nome</label>
+      <input type="text" name="name" [(ngModel)]="employeeForm.value.name">
+      
+      <label>Cargo</label>
+      <input type="text" name="office" [(ngModel)]="employeeForm.value.office">
+      
+      <label>Departamento</label>
+      <input type="text" name="department" [(ngModel)]="employeeForm.value.department">
+
+      <label>Data de admissão</label>
+      <input type="date" name="admissionDate" [(ngModel)]="employeeForm.value.admissionDate">
+
+      <label>Data de nascimento</label>
+      <input type="date" name="birthDate" [(ngModel)]="employeeForm.value.birthDate">
+
+      <label>Endereço</label>
+      <input type="text" name="adress" [(ngModel)]="employeeForm.value.adress">
+
+      <label>Email</label>
+      <input type="email" name="email" [(ngModel)]="employeeForm.value.email">
+
+      <label>Número de telefone</label>
+      <input type="text" name="phoneNumber" [(ngModel)]="employeeForm.value.phoneNumber">
+
+      <label>Salário</label>
+      <input type="number" name="salary" [(ngModel)]="employeeForm.value.salary">
+
+      <label>Situação</label>
+      <input type="text" name="status" [(ngModel)]="employeeForm.value.status">
+
+      <label>Horas Trabalhadas</label>
+      <input type="text" name="workedHours" [(ngModel)]="employeeForm.value.workedHours">
+
+      <button class="btn" type="submit">
+        Inserir
+      </button>
+
+      <button class="btn" type="button" (click)="close()">
+        Cancelar
+      </button>
+    </form>
+  </div>
+</div>

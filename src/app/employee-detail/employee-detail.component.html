@@ -1,0 +1,40 @@
+<div class="employee-details">
+  <div *ngIf="employeeInfos">
+    <h2>Detalhes do(a) {{employeeInfos.name}}</h2>
+
+    <label>Nome</label>
+    <input type="text" [(ngModel)]="employeeInfos.name"/>
+  
+    <label>Cargo</label>
+    <input type="text" [(ngModel)]="employeeInfos.office"/>
+  
+    <label>Departamento</label>
+    <input type="text" [(ngModel)]="employeeInfos.department"/>
+  
+    <label>Data de admissão</label>
+    <input type="date" [(ngModel)]="employeeInfos.admissionDate"/>
+  
+    <label>Data de nascimento</label>
+    <input type="date" [(ngModel)]="employeeInfos.birthDate"/>
+  
+    <label>Endereço</label>
+    <input type="text" [(ngModel)]="employeeInfos.adress"/>
+  
+    <label>Email</label>
+    <input type="text" [(ngModel)]="employeeInfos.email"/>
+  
+    <label>Numero</label>
+    <input type="text" [(ngModel)]="employeeInfos.phoneNumber"/>
+  
+    <label>Salário</label>
+    <input type="number" [(ngModel)]="employeeInfos.salary"/>
+  
+    <label>Status</label>
+    <input type="text" [(ngModel)]="employeeInfos.status"/>
+  
+    <label>Horas trabalhadas</label>
+    <input type="text" [(ngModel)]="employeeInfos.workedHours"/>
+  </div>
+  <button (click)="deleteEmployee()">Excluir</button>
+  <button (click)="updateEmployee()">Atualizar</button>
+</div>
