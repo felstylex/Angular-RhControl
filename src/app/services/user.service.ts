@@ -7,7 +7,7 @@ import { tap } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  URL = "https://node-rhcontrol-production.up.railway.app";
+  URL = "http://localhost:8080/auth";
   TOKEN = "token";
 
   constructor(private http: HttpClient) { }
@@ -18,8 +18,8 @@ export class UserService {
 
   login(user: IUser) {
     return this.http.post<IUser>(this.URL + '/login', user).pipe(
-      tap(response => {
-        const token = response.token;
+      tap(() => {
+        const token = "token";
         if(token) {
           localStorage.setItem(this.TOKEN, token);
         }

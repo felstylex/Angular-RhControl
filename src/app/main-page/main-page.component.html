@@ -9,7 +9,7 @@
       <p>Status</p>
     </li>
     <li class="list" *ngFor="let e of employees">
-      <h2><a  routerLink="/employee/{{ e.id }}">{{ e.name }}</a></h2>
+      <h2><a routerLink="/employee/{{ e.id }}">{{ e.name }}</a></h2>
       <p>{{e.office}}</p>
       <p>{{e.department}}</p>
       <p>{{e.status}}</p>

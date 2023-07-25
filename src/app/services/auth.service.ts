@@ -21,7 +21,7 @@ export class AuthService {
 
   login(token: string) {
     if (token) {
-      localStorage.setItem(this.TOKEN, token);
+      localStorage.setItem(this.TOKEN, "token");
       this.isAuthenticated = true;
     };
   } 

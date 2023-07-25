@@ -13,7 +13,8 @@ export class LoginComponent {
     email: '',
     password: ''
   };
-
+  showPassword = false;
+  
   constructor(
     private userService: UserService,
     private route: Router,
@@ -30,6 +31,10 @@ export class LoginComponent {
 
   registerRoute() {
     this.route.navigate(["/register"]);
+  }
+
+  seePassword() {
+    this.showPassword = !this.showPassword;
   }
 
 }
