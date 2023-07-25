@@ -15,6 +15,8 @@ export class RegisterComponent {
     password: ''
   }
 
+  showPassword = false;
+
   constructor(
     private userService: UserService,
     private route: Router
@@ -40,6 +42,10 @@ export class RegisterComponent {
         this.route.navigate(["login"]);
       }
     );
+  }
+
+  seePassword() {
+    this.showPassword = !this.showPassword;
   }
 
 }

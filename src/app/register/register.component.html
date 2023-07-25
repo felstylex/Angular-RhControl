@@ -1,18 +1,21 @@
-<div class="registration-container">
-  <form class="registration-form" (ngSubmit)="register()">
-    <h2>Cadastro</h2>
-    <div>
-      <label for="name">Nome</label>
-      <input type="text" id="name" name="name" [(ngModel)]="user.name">
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
-    </div>
-    <div>
-      <label for="password">Senha</label>
-      <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
-    </div>
-    <button type="submit">Registrar</button>
-  </form>
+<div class="body">
+  <div class="registration-container">
+    <form class="registration-form" (ngSubmit)="register()">
+      <h1>Cadastro</h1>
+      <div class="name">
+        <i class="fa-regular fa-user"></i>
+        <input type="text" placeholder="Nome" id="name" name="name" [(ngModel)]="user.name">
+      </div>
+      <div class="email">
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Email" id="email" name="email" [(ngModel)]="user.email" required>
+      </div>
+      <div class="password">
+        <i class="fa-solid fa-lock"></i>
+        <input type="{{showPassword ? 'text' : 'password'}}" placeholder="Senha" id="password" name="password" [(ngModel)]="user.password" required>
+        <button (click)="seePassword()" type="button"><i class="fa-solid fa-eye-slash"></i></button>
+      </div>
+      <button class="register" type="submit">Registrar</button>
+    </form>
+  </div>
 </div>
