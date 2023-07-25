@@ -1,16 +1,18 @@
-<div class="login-container">
-  <form class="login-form" (ngSubmit)="login()">
-    <h1>Bem vindo</h1>
-    <div class="email">
-      <i class="fa-regular fa-envelope"></i>
-      <input type="email" placeholder="email" id="email" name="email" [(ngModel)]="user.email" required>
-    </div>
-    <div class="password">
-      <i class="fa-solid fa-lock"></i>
-      <input type="{{showPassword ? 'text' : 'password'}}" placeholder="senha"  id="password" name="password" [(ngModel)]="user.password" required>
-      <button (click)="seePassword()" type="button"><i class="fa-solid fa-eye-slash"></i></button>
-    </div>
-    <button class="login" type="submit">Entrar</button>
-    <button class="register" type="button" (click)="registerRoute()">Não tem uma conta? clique aqui</button>
-  </form>
+<div class="body">
+  <div class="login-container">
+    <form class="login-form" (ngSubmit)="login()">
+      <h1>Bem vindo</h1>
+      <div class="email">
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="email" id="email" name="email" [(ngModel)]="user.email" required>
+      </div>
+      <div class="password">
+        <i class="fa-solid fa-lock"></i>
+        <input type="{{showPassword ? 'text' : 'password'}}" placeholder="senha"  id="password" name="password" [(ngModel)]="user.password" required>
+        <button (click)="seePassword()" type="button"><i class="fa-solid fa-eye-slash"></i></button>
+      </div>
+      <button class="login" type="submit">Entrar</button>
+      <button class="register" type="button" (click)="registerRoute()">Não tem uma conta? clique aqui</button>
+    </form>
+  </div>
 </div>

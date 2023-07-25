@@ -1,9 +1,22 @@
+.body {
+  background-image: url("../../assets/images/layered-waves-haikei.svg");
+  background-size: cover;
+  background-position: center;
+}
+
 .login-container {
   margin: -8px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  margin-left: 10vh;
   height: 100vh;
+
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
 }
 
 .login-form {
