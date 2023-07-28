@@ -1,40 +1,58 @@
 .employee-details {
+  background-image: url("../../assets/images/low-poly-grid-haikei.svg");
+  background-size: cover;
+  background-position: center;
   display: grid;
-  gap: 10px;
-  padding: 20px;
+  gap:10px;
   margin: -8px;
-  background-color: #1B2223;
+  height: 100vh;
+  margin-left: 40px;
+  margin-right: 20px;
+  overflow-y: auto;
 
-  h2{
+  h1{
     color: white;
+    margin-left: 30px;
+
   }
 
   label {
     font-weight: bold;
     color: white;
+    margin-left: 30px;
   }
 
   input {
-    width: calc(100% - 20px);
-    padding: 14px;
+    width: calc(100% - 120px);
+    margin-top: 5px;
+    margin-left: 30px;
+    padding: 13px;
     border: 1px solid #ccc;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #3A4F50;
     color: white;
     font-size: medium;
+
+    &:focus {
+      outline-color: #4495FA;
+    }
   }
 
   button {
-    padding: 10px 20px;
-    background-color: #0EF6CC;
+    margin-right: 10px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 60px;
+    background-color: #4495FA;
     color: black;
     border: none;
+    font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #10b899;
+      background-color: #3474c2;
     }
   }
 }
