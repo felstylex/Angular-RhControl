@@ -2,18 +2,24 @@
   <button (click)="openModal()">Novo</button>
   <button (click)="logout()">Sair</button>
   <div class="main-page">
-    <li>
-      <p>Nome</p>
-      <p>Cargo</p>
-      <p>Departamento</p>
-      <p>Status</p>
-    </li>
-    <li class="list" *ngFor="let e of employees">
-      <h2><a routerLink="/employee/{{ e.id }}">{{ e.name }}</a></h2>
-      <p>{{e.office}}</p>
-      <p>{{e.department}}</p>
-      <p>{{e.status}}</p>
-    </li>
+    <ol>
+      <li class="list-names">
+        <p>Nome</p>
+        <p>Cargo</p>
+        <p>Departamento</p>
+        <p>Status</p>
+      </li>
+    </ol>
+    <ol>
+      <li class="list" *ngFor="let e of employees">
+        <div class="list-wrapper">
+          <h2><a routerLink="/employee/{{ e.id }}">{{ e.name }}</a></h2>
+          <h3>{{e.office}}</h3>
+          <h3>{{e.department}}</h3>
+          <h3>{{e.status}}</h3>
+        </div>
+      </li>
+    </ol>
   </div>
 </div>
 

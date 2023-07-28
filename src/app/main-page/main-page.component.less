@@ -1,64 +1,81 @@
 .body {
+  background-image: url("../../assets/images/low-poly-grid-haikei.svg");
+  background-size: cover;
+  background-position: center;
   margin: -8px;
-  background-color: #1B2223;
   height: 100vh;
-}
+  margin-left: 40px;
+  margin-right: 20px;
+  overflow-y: auto;
 
-.main-page {
-  border-radius: 20px;
-  margin-top: 10px;
-
-  li {
-    display: flex;
-    padding: 10px;
-    color: #ffffff;
-
-    p{
-      margin: 0;
-      flex: 1;
-      font-size: large;
-    }
+  button {
+    margin-top: 10px;
+    margin-left: 2vh;
   }
 
-  .list {
-    background-color: #3A4F50;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #0EF6CC;
-    border-radius: 10px;
+  .main-page {
     margin-top: 10px;
-    color: #ffffff;
+    margin-left: 2vh;
+    margin-right: 3vh;
+    
+    .list-names {
+      display: flex;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
 
-    h2 {
-      margin: 0;
-      flex: 1;
-      a {
-        color: #ffffff;
-        text-decoration: none;
+      p{
+        margin: 0;
+        flex: 1;
+        font-size: large;
       }
     }
 
-    p {
-      margin: 0;
-      flex: 1;
+    ol {
+      font-weight: bold;
+    }
+    
+    .list {
+      background-color: #272626e1;
+      padding: 10px;
+      border: 2px solid #000000;
+      border-radius: 4px;
+      margin-top: 10px;
+      color: #ffffff;
+
+      .list-wrapper {
+        display: flex;
+      
+        h2 {
+          margin: 0;
+          flex: 1;
+          a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+        }
+
+        h3 {
+          margin: 0;
+          flex: 1;
+        }
+      }
     }
   }
-}
 
-button {
-  margin-right: 10px;
-  padding: 10px;
-  background-color: #0EF6CC;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  flex: 1;
+  button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #4495FA;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
 
-  &:hover {
-    background-color: #10b899;
+    &:hover {
+      background-color: #3474c2;
+    }
   }
 }
