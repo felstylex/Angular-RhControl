@@ -1,27 +1,70 @@
-# RhControl
+# Projeto RhControl (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Este é o repositório do front-end de um projeto Full-stack desenvolvido em Angular. O projeto faz parte de um sistema de gerenciamento de funcionários de uma empresa, utilizando um Back-end desenvolvido em Java com Spring Boot e Spring Security.
 
-## Development server
+## Deploy
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto está atualmente em produção e disponível online. Você pode acessá-lo no seguinte link:
 
-## Code scaffolding
+[Link do Deploy](https://rhcontrol.netlify.app/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Login: admin@admin.com
+- Senha: abc123
 
-## Build
+## Pré-requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Antes de executar o projeto, é necessário ter os seguintes pré-requisitos instalados em sua máquina:
 
-## Running unit tests
+- Node.js (https://nodejs.org)
+- Angular CLI (https://angular.io/cli)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação
 
-## Running end-to-end tests
+Caso queira clonar o projeto, siga os seguintes passos:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone este repositório em sua máquina:
+```bash
+  git clone https://github.com/felstylex/Angular-RhControl.git
+```
 
-## Further help
+2. Navegue até o diretório do projeto:
+```bash
+  cd rhControl
+```
+3. Execute o seguinte comando para instalar as dependências do projeto:
+```bash
+  npm install
+```
+4. Inicie o servidor de desenvolvimento do Angular:
+```bash
+  npm start
+```
+5. O aplicativo estará disponível em `http://localhost:4200`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Funcionalidades
+
+O projeto possui as seguintes funcionalidades:
+
+- Lista de funcionários: Exibe uma lista de todos os funcionários cadastrados no sistema.
+- Detalhes do funcionário: Permite visualizar os detalhes de um funcionário específico.
+- Cadastro de funcionário: Permite cadastrar um novo funcionário no sistema.
+- Atualização de funcionário: Permite atualizar os dados de um funcionário existente.
+- Exclusão de funcionário: Permite excluir um funcionário do sistema.
+- Sistema de login: Necessário para acessar as outras rotas.
+- Sistema de registro: Permite cadastrar um novo usuário para acessar o projeto.
+
+## Rotas
+
+O projeto define as seguintes rotas:
+
+- `/employee`: Lista de funcionários e cadastro de funcionário.
+- `/employee/:id`: Detalhes de um funcionário específico além de exlusão e a possibilidade de editar as informações.
+- `/login`: Necessário para acessar as outras rotas.
+- `/register`: Permite cadastrar um novo usuário para acessar o projeto.
+
+## Estilização
+
+O projeto utiliza folhas de estilo em LESS para estilizar os componentes.
+
+## Back end do projeto
+👉 [Link do repositório](https://github.com/felstylex/Java-RhControl)
