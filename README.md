@@ -9,7 +9,7 @@ O projeto está atualmente em produção e disponível online. Você pode acess�
 [Link do Deploy](https://rhcontrol.netlify.app/)
 
 - Login: admin@admin.com
-- Senha: abc123
+- Senha: 123abc
 
 ## Pré-requisitos
 
