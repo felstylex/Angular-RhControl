@@ -7,7 +7,7 @@ import { tap } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  URL = "http://localhost:8080/auth";
+  URL = "https://java-rhcontrol-production.up.railway.app";
   TOKEN = "token";
 
   constructor(private http: HttpClient) { }

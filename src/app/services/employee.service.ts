@@ -9,7 +9,7 @@ export class EmployeeService {
 
   constructor(private http: HttpClient) { }
 
-  URL = "http://localhost:8080/auth/employee";
+  URL = "https://java-rhcontrol-production.up.railway.app/employee";
 
   getAll() {
     return this.http.get<IEmployee[]>(this.URL);
